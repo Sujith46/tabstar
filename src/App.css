@@ -6,9 +6,9 @@
     rgba(18, 32, 32, 1) 20%,
     rgba(200, 116, 116, 1) 100%
   ); */
-
-  background: rgb(18,32,32);
-background: linear-gradient(180deg, rgba(18,32,32,1) 20%, rgba(146,146,146,1) 100%);
+  background-color: #361D32;
+  /* background: rgb(18,32,32);
+background: linear-gradient(180deg, rgba(18,32,32,1) 20%, rgba(146,146,146,1) 100%); */
   width: 400px;
   min-height: 250px;
 }
