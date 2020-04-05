@@ -1,8 +1,22 @@
 .cardWrappper{
    background-color: #F1E8E6;
    border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   padding: 0.3em;
 }
 
 .cardWrappper div{
     color: #313131;
+    text-overflow: ellipsis;
+}
+
+.cardWrappper img {
+    width: 20px;
+    margin: 0 5px;
+   
+}
+
+.favivon{
+     border-radius: 15px;
 }

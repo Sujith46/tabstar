@@ -3,7 +3,9 @@ import React from "react";
 import Button from "../utlis/button";
 import Container from "../container/layoutContainer";
 
-import style from '../components/urlfetch.css'
+import style from "../components/urlfetch.css";
+import Pencil from "../images/pencil.svg";
+import Trash from "../images/trash.svg";
 
 function urlfetch() {
   var url = window.location.href;
@@ -16,8 +18,8 @@ function urlfetch() {
     var nodeList = document.getElementsByTagName("link");
     for (var i = 0; i < nodeList.length; i++) {
       if (
-        nodeList[i].getAttribute("rel") == "icon" ||
-        nodeList[i].getAttribute("rel") == "shortcut icon"
+        nodeList[i].getAttribute("rel") === "icon" ||
+        nodeList[i].getAttribute("rel") === "shortcut icon"
       ) {
         favicon = nodeList[i].getAttribute("href");
         console.log(favicon);
@@ -30,19 +32,19 @@ function urlfetch() {
     return myimage;
   };
 
-//   alert(getFavicon());
+  // alert(getFavicon());
 
-  var newimage = getFavicon;
+  var newimage = getFavicon();
 
   return (
     <Container>
       <div className="url">
         <Button />
         <div className="cardWrappper" style={style.cardWrapper}>
-          <div>{url}</div>
-          {getFavicon}
-          <img src={newimage} alt="favicon"></img>
-          <link href={newimage}></link>
+          <img class="favivon" src={newimage} alt="favicon"></img>
+          <div class="url-link">{url}</div>
+          <img src={Pencil} alt="rename"></img>
+          <img src={Trash} alt="delete"></img>
         </div>
       </div>
     </Container>
