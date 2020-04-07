@@ -14,7 +14,7 @@ class Button extends Component {
           className="button"
           style={{ backgroundColor: `#361d32`, border: `none` }}
         >
-          <img src={Add} alt="add-button" style={{ width: `35px` }}></img>
+          <img src={Add} alt="add-button" onClick={()=>alert('Clicked')} style={{ width: `35px` }}></img>
         </button>
       </div>
     );

@@ -10,7 +10,10 @@
     color: #313131;
     text-overflow: ellipsis;
 }
-
+.cardWrappper a {
+    width: 20px;
+    margin: 0 5px;
+}
 .cardWrappper img {
     width: 20px;
     margin: 0 5px;

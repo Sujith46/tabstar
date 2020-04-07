@@ -41,7 +41,8 @@ function urlfetch() {
       <div className="url">
         <Button />
         <div className="cardWrappper" style={style.cardWrapper}>
-          <img class="favivon" src={newimage} alt="favicon"></img>
+          
+           <img class="favivon" src={newimage} alt="favicon"></img>
           <div class="url-link">{url}</div>
           <img src={Pencil} alt="rename"></img>
           <img src={Trash} alt="delete"></img>
